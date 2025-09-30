@@ -1,0 +1,29 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1 {
+    color:cadetblue;
+}
+
+
+#celestial {
+    color:navy;
+}
+
+#rest {
+    color:rgba(90, 189, 131, 0.363);
+}
+
+.crimson {
+    color:crimson;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bigger {
+    font-size: 24pt;
+}
+
+.special {
+    font-weight: 800;
+}
