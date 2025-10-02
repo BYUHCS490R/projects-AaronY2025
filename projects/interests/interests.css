@@ -1,0 +1,44 @@
+body {
+    font-size: 12pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    color:navy
+}
+
+body header {
+    font-size: 18pt;
+}
+
+header {
+    color:navy
+}
+
+html {
+    background-color: cornflowerblue;
+}
+
+main p {
+    color: lightblue
+}
+
+#basketball {
+    color: navy
+}
+
+.volleyball {
+    color: navy
+}
+
+span {
+    font-size: 15pt;
+}
+
+#color {
+    color:lightblue
+}
+
+.navy {
+    color:navy
+}
