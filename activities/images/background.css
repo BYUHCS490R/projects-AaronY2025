@@ -1,0 +1,20 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url(greenbg.jpg) green
+}
+
+header {
+    background-image: url(wave.jpg);
+    background-repeat: no-repeat;
+}
+
+.mylist {
+    list-style-image: url(dot.png);
+}
+
+.other {
+    background-image: url(greenbg.jpg);
+    background-repeat: repeat;
+    background-color: green;
+    color: white
+}
