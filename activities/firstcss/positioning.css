@@ -1,0 +1,50 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margin-top: 400px;  more content below our navigation */
+}
+
+nav a {
+    display: block; /*inline-block*/
+    padding: 40px;
+    background-color: aqua;
+    border-bottom: thin solid white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.turtle {
+    border: thin solid black;
+    width: 300px;
+}
+
+.floater {
+    float: left;
+}
+
+.hammer {
+    position: fixed;
+    top: 10px;
+    left: 200px;
+    margin: 0;
+    z-index: 10;
+    display: none;
+}
+
+.turtle img {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+.hammer {
+    position: relative;
+    bottom: 20px;
+    left: -300px;
+}
+
