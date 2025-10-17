@@ -1,0 +1,33 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 10px;
+}
+
+.child {
+    background-color: aqua;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "lside main rside"
+    "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
