@@ -1,0 +1,37 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: cadetblue;
+    color: azure;
+    width: 150px;
+    text-decoration: none;
+}
+
+nav a hover {
+    color: cadetblue;
+    background-color: azure;
+    text-decoration: underline;
+}
+
+.card {
+    border: thin solid black;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+    width: 25%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    flex-direction: row;
+}
+
+.mainthing {
+    order: -1;
+}
