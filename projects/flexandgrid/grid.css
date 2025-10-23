@@ -1,0 +1,85 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    background: black;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a {
+    display: block; 
+    padding: 4px;
+    background-color: black;
+    border-bottom: thin solid black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.info {
+    display: flex;
+    margin: 20px;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    padding: 25px;
+    margin-right: 25px;
+    background-color: lightgray;
+    border-right: 3px solid cadetblue;
+}
+
+main {
+    flex: 1;
+    padding: 15px 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: black;
+    padding: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    color: blue;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
