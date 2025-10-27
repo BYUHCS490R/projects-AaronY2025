@@ -22,6 +22,7 @@ header h1 {
 
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     background-color: rgb(0, 140, 255);
 }
@@ -61,4 +62,23 @@ nav a:hover {
     display: flex;
     flex-flow: row wrap;
 
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    
+}
+
+@media ONLY screen AND (max-width: 400px) {
+    nav {
+        flex-direction: column;
+    }
+    .mainrow {
+        flex-direction: column-reverse;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .main-card {
+        order: -1;
+    }
 }
