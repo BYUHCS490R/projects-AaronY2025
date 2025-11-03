@@ -1,3 +1,31 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.schedule {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.schedule thead {
+    background-color: blue;
+    color: white;
+}
+
+.schedule tfoot tr {
+    background-color: blue;
+    color: white;
+}
+
+.schedule tbody tr {
+    background-color: lightgray;
+}
+
+/*.schedule th, .schedule td {
+    border: thin solid black;
+    padding: 5px;
+    }
+    caption-side: top;
+    width: 80%;
+    margin: auto;
+     border: thin solid black;
