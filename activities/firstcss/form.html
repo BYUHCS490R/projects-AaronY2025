@@ -13,40 +13,47 @@
     <main>
         <h1>Forms</h1>
         <form action="formprocess.html" method="post">
-            <div>
-                <label for="fname">Full Name:</label>
-                <input type="text" name="fname" placeholder="full name" id="fname">
-            </div>
-            <div>
-                <label for="fname">Email:</label>
-                <input type="email" name="fname" placeholder="your@gmail.com" id="fname">
-            </div>
-            <div>
-                <label for="pass">Password:</label>
-                <input type="password" name="pass" id="pass">
-            </div>
-            <div>
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="blank">---</option>
-                    <option value="CA">California</option>
-                    <option value="HI" selected>Hawaii</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
-            <div>
-                <label><input type="checkbox" checked>I agree to the terms and services.</label>
-            </div>
-            <div>
-                Gender
-                <label><input type="radio" name="male" checked>Male</label>
-                <label><input type="radio" name="female">Female</label>
-            </div>
-            <div>
-                <label for="comment">Comments</label>
-                <textarea name="comment" id="comment">Hello</textarea>
-            </div>
-            <input type="submit" value="Sign Up">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="fname" placeholder="Full Name" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="fname">Email:</label>
+                    <input type="email" name="fname" placeholder="your@gmail.com" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">---</option>
+                        <option value="CA">California</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" checked>I agree to the terms and services.</label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div> Gender
+                    <label><input type="radio" name="male" checked>Male</label>
+                    <label><input type="radio" name="female">Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments</label>
+                    <textarea name="comment" id="comment">Hello</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
         </form>
         <ul>
             <li>The action is like the href, it is like a link.</li>
