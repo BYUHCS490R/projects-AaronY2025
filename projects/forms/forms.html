@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Sign Up Page</h1>
+    </header>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" placeholder="Full Name" id="fname" name="fname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <input list="state" id="state" name="state"> 
+                    <datalist id="state">
+                        <option value="HI"></option>
+                        <option value="CA"></option>
+                        <option value="TX"></option>
+                        <option value="AZ"></option>
+                        <option value="UT"></option>
+                        <option value="AK"></option>
+                    </datalist>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox">I agree to the terms and services.</label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div> Gender
+                    <label><input type="radio" name="male" value="male">Male</label>
+                    <label><input type="radio" name="female" value="female">Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments</label>
+                    <textarea name="comment" id="comment">Type Here</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy; 2025 Aaron Yuen
+    </footer>
+</body>
+</html>

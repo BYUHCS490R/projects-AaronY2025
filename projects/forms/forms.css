@@ -1,0 +1,47 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input:not([type='submit']) {
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+fieldset {
+    background-color: rgb(159, 159, 226);
+    width: 80%;
+    margin: auto;
+}
+
+legend {
+    background-color: rgb(30, 30, 138);
+    color: white;
+    padding: 20px;
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer {
+        text-align: left;
+    }
+}
