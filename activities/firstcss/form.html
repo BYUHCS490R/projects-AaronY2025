@@ -12,7 +12,7 @@
     </header>
     <main>
         <h1>Forms</h1>
-        <form action="formprocess.html" method="post">
+        <form action="formprocess.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
@@ -56,13 +56,37 @@
             </fieldset>
         </form>
         <ul>
-            <li>The action is like the href, it is like a link.</li>
-            <li>Method is the type of encryption used to gain the data from the forms.</li>
-            <li>Get is reading the data, and post is changing the data byy replacing the old data with the new ones.</li>
+            <li>Javascript is another coding language that helps with making the page intereactive. The name came from the competitor to Microsoft.</li>
+            <li>2 ways you can run Javascript</li>
+            <li>Jquery was the most popular front-end for Javascript.</li>
+            <li>React is the most popular front-end for Javascript today.</li>
         </ul>
     </main>
     <footer>
         &copy; 2025 Aaron Yuen
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) { event .preventDefault();
+        alert("Form Submitted");
+
+        const fname = document.getElementById('fname').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const state = document.getElementById('state').value;
+
+        if (!fname || !email) {
+            alert("You need a name and email.")
+        }
+
+        const FormData = {
+            name: fname,
+            email: email,
+            password:password,
+            state: state
+        };
+
+        console.log(FormData);
+        });
+    </script>
 </body>
 </html>
