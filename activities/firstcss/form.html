@@ -56,10 +56,8 @@
             </fieldset>
         </form>
         <ul>
-            <li>Javascript is another coding language that helps with making the page intereactive. The name came from the competitor to Microsoft.</li>
-            <li>2 ways you can run Javascript</li>
-            <li>Jquery was the most popular front-end for Javascript.</li>
-            <li>React is the most popular front-end for Javascript today.</li>
+            <li>AJAX is blank</li>
+            <li>You put your JS script in a separate file because</li>
         </ul>
     </main>
     <footer>
@@ -86,6 +84,10 @@
         };
 
         console.log(FormData);
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "submit.json", true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
         });
     </script>
 </body>
