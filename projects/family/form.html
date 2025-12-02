@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="family.css">
+</head>
+<script src="form.js"></script>
+<body>
+    <header>
+        <h1>My Family</h1>
+        <nav>
+            <a href="family.html">My Family</a>
+            <a href="luckie.html">Luckie</a>
+            <a href="grace.html">Grace</a>
+            <a href="raya.html">Raya</a>
+            <a href="form.html" class="current">Form</a>
+            <a href="table.html">Table</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+            <fieldset>
+                <legend>Family </legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" placeholder="Full Name" id="fname" name="fname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="date">Date of Birth</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Relationship:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <input list="state" id="state" name="state"> 
+                    <datalist id="state">
+                        <option value="HI"></option>
+                        <option value="CA"></option>
+                        <option value="TX"></option>
+                        <option value="CO"></option>
+                        <option value="UT"></option>
+                        <option value="WY"></option>
+                    </datalist>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox">I am a relative to Aaron Yuen.</label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div> Gender
+                    <label><input type="radio" name="male" value="male">Male</label>
+                    <label><input type="radio" name="female" value="female">Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments</label>
+                    <textarea name="comment" id="comment">Type Here</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy; 2025 Aaron Yuen
+    </footer>
+</body>
+</html>

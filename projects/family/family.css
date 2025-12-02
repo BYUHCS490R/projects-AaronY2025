@@ -40,6 +40,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.current {
+    color: gray
+}
+
 .mainrow {
     display: flex;
 }
@@ -64,6 +68,44 @@ nav a:hover {
     display: flex;
     flex-flow: row wrap;
 
+}
+
+.container {
+  display: flex;
+  flex-direction: row;   
+  padding: 20px;
+}
+
+.table-section {
+  flex: 1;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 @media ONLY screen AND (max-width: 400px) {
