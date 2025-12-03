@@ -3,6 +3,7 @@ document.getElementById('myForm').addEventListener('submit',function(event) { ev
 
     const fname = document.getElementById('fname').value;
     const email = document.getElementById('email').value;
+    const date = document.getElementById('date').value;
     const password = document.getElementById('password').value;
     const age = document.getElementById('age').value;
     const state = document.getElementById('state').value;
