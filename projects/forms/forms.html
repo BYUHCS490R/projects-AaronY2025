@@ -6,14 +6,13 @@
     <title>Form</title>
     <link rel="stylesheet" href="forms.css">
 </head>
-<script src="form.js"></script>
 <body>
     <header>
         <h1>Sign Up Page</h1>
     </header>
     <main>
         <h1>Forms</h1>
-        <form action="formprocess.html" method="post">
+        <form id="myForm" method="post">
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
@@ -29,8 +28,8 @@
                     <input type="date" name="date" id="date">
                 </div>
                 <div class="form-row">
-                    <label for="pass">Password:</label>
-                    <input type="password" name="pass" id="pass">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
                 </div>
                 <div class="form-row">
                     <label for="age">Age:</label>
@@ -71,5 +70,6 @@
     <footer>
         &copy; 2025 Aaron Yuen
     </footer>
+    <script src="form.js"></script>
 </body>
 </html>
