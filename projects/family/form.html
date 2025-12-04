@@ -6,7 +6,6 @@
     <title>Form</title>
     <link rel="stylesheet" href="family.css">
 </head>
-<script src="form.js"></script>
 <body>
     <header>
         <h1>My Family</h1>
@@ -14,14 +13,14 @@
             <a href="family.html">My Family</a>
             <a href="luckie.html">Luckie</a>
             <a href="grace.html">Grace</a>
-            <a href="raya.html">Raya</a>
+            <a href="raya.html">Family Search</a>
             <a href="form.html" class="current">Form</a>
             <a href="table.html">Table</a>
         </nav>
     </header>
     <main>
-        <h1>Forms</h1>
-        <form action="formprocess.html" method="post">
+        <h1>Form</h1>
+        <form id="myForm" method="post">
             <fieldset>
                 <legend>Family </legend>
                 <div class="form-row">
@@ -37,16 +36,17 @@
                     <input type="date" name="date" id="date">
                 </div>
                 <div class="form-row">
-                    <label for="pass">Relationship:</label>
-                    <input type="password" name="pass" id="pass">
+                    <label for="password">Relationship:</label>
+                    <input type="password" name="password" id="password">
                 </div>
                 <div class="form-row">
                     <label for="age">Age:</label>
                     <input type="number" name="age" id="age">
                 </div>
                 <div class="form-row">
-                    <label for="state">State:</label>
-                    <input list="state" id="state" name="state"> 
+                    <label for="state-list">State:</label>
+                    <input list="state-list" id="state" name="state">
+                    <datalist id="state-list">
                     <datalist id="state">
                         <option value="HI"></option>
                         <option value="CA"></option>
@@ -79,5 +79,6 @@
     <footer>
         &copy; 2025 Aaron Yuen
     </footer>
+    <script src="form.js"></script>
 </body>
 </html>
